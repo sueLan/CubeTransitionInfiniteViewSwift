@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "CubeTransitionInfiniteViewSwift"
-  spec.version      = "1.0.3"
+  spec.version      = "1.0.4"
   spec.summary      = "An infinite scroll view to support 3DmCube transition animation, like Intagram stories"
 
   # This description is used to generate tags and improve search results.
