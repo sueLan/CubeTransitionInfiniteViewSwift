@@ -357,22 +357,22 @@ public class CubeTransitionInfiniteView: UIView {
             let gap1 =  width / 2.0 * (1-cos(r));
             let gap2 = width / 2.0 * (1-cos(r2));
 
-            leftView.transform3D = self.transformFrom(rotate:r, translateX:translation.x + gap1, translateZ:sin(r) * width/2);
-            rightView.transform3D = self.transformFrom(rotate:r2, translateX:translation.x - gap2, translateZ:-sin(r2) * width/2);
+            leftView.layer.sublayerTransform = self.transformFrom(rotate:r, translateX:translation.x + gap1, translateZ:sin(r) * width/2);
+            rightView.layer.sublayerTransform = self.transformFrom(rotate:r2, translateX:translation.x - gap2, translateZ:-sin(r2) * width/2);
         } else if (translation.x < 0) {
             // scroll right: from 0 --> - M_PI/4
             let r =  k * maxRotateAngleForView;
             let gapWidth1 = width / 2.0 * (1-cos(r));
 
             // sin(r) < 0
-            leftView.transform3D = self.transformFrom(rotate:r, translateX:translation.x + gapWidth1, translateZ:sin(r) * width / 2);
+            leftView.layer.sublayerTransform = self.transformFrom(rotate:r, translateX:translation.x + gapWidth1, translateZ:sin(r) * width / 2);
                
             // The angle between the two views should be fixed
             // Angle -> 0
             let r2 = (maxRotateAngleForView + r);
             let gapWidth2 = width / 2.0 * (1-cos(r2));
             // sin(r2) > 0
-            rightView.transform3D = self.transformFrom(rotate:r2, translateX:translation.x - gapWidth2, translateZ:-sin(r2) * width / 2);
+            rightView.layer.sublayerTransform = self.transformFrom(rotate:r2, translateX:translation.x - gapWidth2, translateZ:-sin(r2) * width / 2);
         }
     }
 

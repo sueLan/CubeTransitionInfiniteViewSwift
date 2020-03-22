@@ -29,7 +29,7 @@ Pod::Spec.new do |spec|
         This view is like a scroll view support limited subviews. 
                    DESC
 
-  spec.homepage     = "http://EXAMPLE/CubeTransitionInfiniteViewSwift"
+  spec.homepage     = "https://github.com/sueLan/CubeTransitionInfiniteViewSwift"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -65,14 +65,15 @@ Pod::Spec.new do |spec|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  spec.platform     = :ios
-  # spec.platform     = :ios, "5.0"
+  # spec.platform     = :ios
+  spec.platform     = :ios, "9.0"
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
   # spec.osx.deployment_target = "10.7"
   # spec.watchos.deployment_target = "2.0"
   # spec.tvos.deployment_target = "9.0"
+  spec.swift_version = '4.2'
 
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -92,7 +93,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
+  spec.source_files  = "CubeTransitionInfiniteViewSwift", "CubeTransitionInfiniteViewSwift/**/*.{h,swift}"
   spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
