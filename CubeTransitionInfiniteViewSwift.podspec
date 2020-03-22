@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "CubeTransitionInfiniteViewSwift"
   spec.version      = "1.0.0"
-  spec.summary      = "An infinite scroll view to support 3D-Cube transition animation, like Intagram stories"
+  spec.summary      = "An infinite scroll view to support 3DmCube transition animation, like Intagram stories"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,6 +25,8 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
+        An infinite view to support 3D Cube transition animation, like video page flipping animation in Intagram stories.
+        This view is like a scroll view support limited subviews. 
                    DESC
 
   spec.homepage     = "http://EXAMPLE/CubeTransitionInfiniteViewSwift"
@@ -38,8 +40,8 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = "MIT (example)"
-  # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  spec.license      = "MIT"
+  spec.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
